@@ -1,0 +1,90 @@
+* {
+    font-family: sans-serif, cursive;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+h1::first-letter {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+h2::first-letter {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.first-run {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 560px;
+}
+
+.part-text {
+    display: flex;
+    align-items: center;
+}
+
+.part-text-container {
+    padding: 50px;
+}
+
+.part-text-container p {
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.part-text-container button {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: rgb(170, 170, 170);
+    background: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.second-run {
+    display: grid;
+    position: relative;
+    height: 380px;
+    grid-template-columns: 35% 1fr;
+}
+
+.third-run {
+    display: grid;
+    position: relative;
+    height: 380px;
+    grid-template-columns: 1fr 35%;
+}
+
+.third-run img {
+    height: 380px;
+}
+
+.first-run::after,
+.second-run::after,
+.third-run::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(220, 220, 220);
+}
