@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg_button: rgb(170, 170, 170);
+}
+
 h1 {
     font-size: 2rem;
     margin-bottom: 25px;
@@ -51,7 +55,7 @@ h2::first-letter {
     letter-spacing: 1px;
     padding: 10px 20px;
     border-radius: 20px;
-    border-color: rgb(170, 170, 170);
+    border-color: var(--bg_button);
     background: none;
 }
 
@@ -87,4 +91,103 @@ img {
     width: 100%;
     height: 1px;
     background: rgb(220, 220, 220);
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 50% 25%;
+    grid-gap: 30px;
+    grid-template-areas:
+    'nm em'
+    'ta ta'
+    'sb sb';
+}
+
+h3::first-letter {
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.form-name,
+.form-email,
+.form-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+}
+
+.form-name {
+grid-area: nm;
+}
+
+.form-email {
+grid-area: em;
+}
+
+.form-message {
+grid-area: ta;
+}
+
+.form-message > textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    grid-area: sb;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: var(--bg_button);
+    background: none;
+    width: 139px;
+    margin: 0 auto;
+}
+
+form::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 1px;
+    background: rgb(220, 220, 220);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 80px 25%;
+}
+
+footer > button {
+    display:block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border-color: var(--bg_button);
+    background: none;
 }
