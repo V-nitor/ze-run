@@ -1,11 +1,15 @@
 * {
-    font-family: sans-serif, cursive;
+    font-family: corbel, sans-serif, cursive;
     margin: 0;
     box-sizing: border-box;
 }
 
 :root {
     --bg_button: rgb(170, 170, 170);
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 h1 {
@@ -45,6 +49,10 @@ h2::first-letter {
 }
 
 .part-text-container p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
     line-height: 30px;
     margin-bottom: 25px;
 }
