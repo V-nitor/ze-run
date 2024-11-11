@@ -199,3 +199,43 @@ footer > button {
     border-color: var(--bg_button);
     background: none;
 }
+
+/***************** Responsive *****************/
+
+@media screen and (max-width: 790px) {
+
+    .first-run {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+    }
+
+    .part-text-container {
+        padding: 15px;
+    }
+
+    .second-left,
+    .third-right {
+        display: none;
+    }
+
+    .second-run,
+    .third-run {
+        display: block;
+        height: auto;
+    }
+
+    input[type="text"] {
+        max-width: 290px;
+        width: 41vw;
+    }
+
+    .form-message > textarea {
+        max-width: 610px;
+        width: 90vw;
+    }
+
+    footer{
+        margin: 80px 15%;
+    }
+
+}
