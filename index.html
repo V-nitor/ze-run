@@ -6,76 +6,96 @@
     <title>Make a run</title>
     <link rel="shortcut icon" href="./sketch/img/pexels-kokorevas-2968388.png">
     <link rel="stylesheet" href="style.css">
+    <!-- 'Integrity' and the rest after this= no essential to include "font awesome cdn" in our site web at the bottom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <section class="first-run">
-        <div class="part-text">
-            <div class="part-text-container">
+    <header>
+        <div class="container">
+            <div>
                 <h1>run</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus id corrupti commodi quasi voluptas consectetur itaque delectus unde. Debitis!</p>
-                <button>get started</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, sit! Animi dolores ea maxime, asperiores id, cum dignissimos cupiditate dicta inventore voluptate expedita, magnam modi mollitia quam earum quas illo.</p>
+                <a href="#" class="button">get started</a>
             </div>
         </div>
-        <div class="first-right">
-            <img src="./sketch/img/banner.jpg" alt="car park">
-        </div>
-    </section>
+        <div class="img-banner"></div>
+    </header>
 
-    <section class="second-run">
-        <div class="second-left">
-            <img src="./sketch/img/img-left.jpg" alt="running into forest">
-        </div>
-        <div class="part-text">
-            <div class="part-text-container">
-                <h2>part2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis sed quas perferendis nesciunt quis error harum corporis! Libero laudantium deleniti impedit totam odit, incidunt mollitia excepturi, autem omnis sit quaerat laboriosam tenetur a est aliquid culpa dolorem. Sunt, eum pariatur iure ea excepturi ab.</p>
-                <button>learn more</button>
+    <section class="section-1">
+        <div class="img"></div>
+        <div class="container">
+            <div>
+                <h2>part 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, similique harum quidem eum numquam nisi impedit vitae quisquam molestias sequi unde minima perferendis deserunt ipsum dolorum architecto? Error, ratione temporibus?</p>
+                <a href="#" class="button">learn more</a>
             </div>
         </div>
     </section>
 
-    <section class="third-run">
-        <div class="part-text">
-            <div class="part-text-container">
-                <h2>part3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam eaque repellat natus ratione, voluptatem iure reiciendis qui non, consectetur maxime accusamus quasi nisi ipsam explicabo quaerat excepturi laborum eligendi illum quis similique. Earum eveniet fugit voluptatibus dicta est repellat?</p>
-                <button>learn more</button>
+    <section class="section-2">
+        <div class="container">
+            <div>
+                <h2>part 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio ipsam illum voluptatibus reiciendis, suscipit accusamus dolorum quis. Odit ratione, tempora doloremque obcaecati hic nulla, commodi laudantium, dicta voluptatibus temporibus illo consequuntur! Voluptates error ex ut atque magnam illum iure?</p>
+                <a href="#" class="button">learn more</a>
             </div>
         </div>
-        <div class="third-right">
-            <img src="./sketch/img/img-right.jpg" alt="running under bridge">
-        </div>
+        <div class="img"></div>
     </section>
 
-    <form>
+    <section class="contact">
         <h2>get in touch</h2>
-        <div class="form-container">
-            <div class="form-name">
-                <h3>name</h3>
-                <input id="firstname" type="text" minlength="3" maxlength="15" required="">
+        <form action="#">
+            <div class="form-grid">
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label for="message">message</label>
+                    <textarea id="message"></textarea>
+                </div>
             </div>
-            <div class="form-email">
-                <h3>email</h3>
-                <input id="surname" type="text" minlength="3" maxlength="15" required="">
-            </div>
-            <div class="form-message">
-                <h3>message</h3>
-                <textarea cols="70" rows="10" maxlength="150"></textarea>
-            </div>
-            <input id="button" type="submit" value="send message">
-        </div>
-    </form>
+            <!-- Info= To change the description for a <input type="submit">, it is obligatory to give it "value" inside him at the bottom -->
+            <input type="submit" class="button" value="send message">
+        </form>
+    </section>
 
     <footer>
-        <button><i class="fa-brands fa-x-twitter"></i></button>
-        <button><i class="fa-brands fa-facebook-f"></i></button>
-        <button><i class="fa-brands fa-instagram"></i></button>
-        <button><i class="fa-brands fa-linkedin-in"></i></button>
-        <button><i class="fa-regular fa-envelope"></i></button>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
-
+    
 </body>
 </html>
