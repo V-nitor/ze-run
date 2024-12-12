@@ -84,3 +84,29 @@ header{
 .img-banner{
     background: url(../sketch/img/banner.jpg) fixed right/cover;
 }
+
+.section-1,
+.section-2,
+.contact {
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.section-1{
+    display: grid;
+    grid-template-columns: 37% 63%;
+    min-height: 400px;
+}
+
+.section-1 .img{
+    background: url(../sketch/img/img-left.jpg) center/cover;
+}
+
+.section-2{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    min-height: 400px;
+}
+
+.section-2 .img{
+    background: url(../sketch/img/img-right.jpg) center/cover;
+}
