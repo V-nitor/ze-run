@@ -110,3 +110,45 @@ header{
 .section-2 .img{
     background: url(../sketch/img/img-right.jpg) center/cover;
 }
+
+/* ********************* CONTACT ********************* */
+
+.contact{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.form-grid{
+    width: 85%;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+label{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+textarea{
+    width: 100%;
+    margin: 20px 0 40px;
+    border-radius: 4px;
+    /* Funny anecdote= To resolve a problem strange with the solo "border-radius" (without announce the "border") at the top. Create a "border: 1px solid" at the bottom */
+    border: 1px solid #ccc;
+    /* Info= the padding, when we talk about: "button", "input" or else "textarea" mean 'marge inside the box' at the bottom */
+    padding: 10px;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus{
+    border: 1px solid skyblue;
+}
+
+textarea{
+    resize: none;
+    height: 180px;
+}
