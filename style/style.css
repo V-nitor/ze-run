@@ -82,6 +82,7 @@ header{
     grid-template-columns: 50% 50%;
 }
 
+/* WARNING= ".img-banner" (at the bottom) don't need an "height" to appear because the "img" by default take all the cell thanks to "grid" for this exercice ! */
 .img-banner{
     background: url(../sketch/img/banner.jpg) fixed right/cover;
 }
@@ -201,4 +202,39 @@ footer a{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+}
+
+/* ********************* RESPONSIVE ********************* */
+
+@media screen and (max-width: 899.5px) {
+    header,
+    .section-1,
+    .section-2{
+        display: block;
+        min-height: auto;
+        /* WARNING= "min-height: auto" (at the top) for cell phone to remove "min-height: [...]vh" for computer because it's no necessary for mobile */
+    }
+
+    header > .img-banner{
+        height: 50vh;
+        margin-top: 30px;
+    }
+
+    .container{
+        padding: 15px;
+    }
+
+    footer ul{
+        min-width: 200px;
+    }
+
+    footer a{
+        width: 30px;
+        height: 30px;
+    }
+
+    footer i{
+        /* WARNING= To change icon's size, it's similar than a font ! */
+        font-size: 0.7rem;
+    }
 }
